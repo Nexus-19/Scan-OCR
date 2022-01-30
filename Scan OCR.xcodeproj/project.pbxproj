@@ -11,6 +11,9 @@
 		5664827727A2BEFC0046A8D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664827627A2BEFC0046A8D6 /* ContentView.swift */; };
 		5664827927A2BEFC0046A8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664827827A2BEFC0046A8D6 /* Assets.xcassets */; };
 		5664827C27A2BEFC0046A8D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664827B27A2BEFC0046A8D6 /* Preview Assets.xcassets */; };
+		5664828327A2C0450046A8D6 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828227A2C0450046A8D6 /* TextRecognizer.swift */; };
+		5664828527A2C08D0046A8D6 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828427A2C08D0046A8D6 /* ScannerView.swift */; };
+		5664828727A2C0B50046A8D6 /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664828627A2C0B50046A8D6 /* ScanData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		5664827627A2BEFC0046A8D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5664827827A2BEFC0046A8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5664827B27A2BEFC0046A8D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5664828227A2C0450046A8D6 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		5664828427A2C08D0046A8D6 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		5664828627A2C0B50046A8D6 /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				5664827427A2BEFC0046A8D6 /* Scan_OCRApp.swift */,
 				5664827627A2BEFC0046A8D6 /* ContentView.swift */,
+				5664828627A2C0B50046A8D6 /* ScanData.swift */,
+				5664828427A2C08D0046A8D6 /* ScannerView.swift */,
+				5664828227A2C0450046A8D6 /* TextRecognizer.swift */,
 				5664827827A2BEFC0046A8D6 /* Assets.xcassets */,
 				5664827A27A2BEFC0046A8D6 /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5664827727A2BEFC0046A8D6 /* ContentView.swift in Sources */,
+				5664828527A2C08D0046A8D6 /* ScannerView.swift in Sources */,
+				5664828327A2C0450046A8D6 /* TextRecognizer.swift in Sources */,
 				5664827527A2BEFC0046A8D6 /* Scan_OCRApp.swift in Sources */,
+				5664828727A2C0B50046A8D6 /* ScanData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 				DEVELOPMENT_TEAM = 45KY987B8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +314,7 @@
 				DEVELOPMENT_TEAM = 45KY987B8Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) requires permission to scan files";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
